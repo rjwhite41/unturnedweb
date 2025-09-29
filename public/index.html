@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Block Survival World</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="loginPanel">
+  <input id="username" placeholder="Username"/>
+  <input id="password" type="password" placeholder="Password"/>
+  <button id="btnRegister">Register</button>
+  <button id="btnLogin">Login</button>
+  <div id="loginMsg"></div>
+</div>
+
+<div id="hud" style="display:none;">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="stats"></div>
+  <div id="shop">
+    <h3>Crafting</h3>
+    <button data-item="campfire">🔥 Campfire (3 wood,1 cloth)</button>
+    <button data-item="sword">🗡️ Sword (1 wood,2 metal)</button>
+    <button data-item="bandage">🩹 Bandage (2 cloth)</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>

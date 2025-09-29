@@ -1,0 +1,14 @@
+{
+  "name": "block-survival-world",
+  "version": "1.0.0",
+  "description": "Multiplayer block survival with crafting, world, and persistence",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.0",
+    "bcrypt": "^5.1.0"
+  }
+}

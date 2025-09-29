@@ -1,0 +1,7 @@
+body{margin:0;font-family:sans-serif;background:#111;color:#eee;}
+#loginPanel{position:absolute;top:20%;left:40%;display:flex;flex-direction:column;gap:6px;}
+#hud{position:relative;}
+canvas{display:block;margin:0 auto;border:4px solid #222;background:#222;}
+#stats{position:absolute;top:10px;left:10px;color:#fff;}
+#shop{position:absolute;top:10px;right:10px;background:#222;padding:10px;border:2px solid #555;}
+#shop button{display:block;margin:4px;}

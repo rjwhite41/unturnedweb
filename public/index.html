@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3D Survival Game</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Blocky Survival Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-<div id="login-screen">
-  <h2>Login / Register</h2>
-  <input id="username" placeholder="Username">
-  <input id="password" placeholder="Password" type="password">
-  <button id="login-btn">Login</button>
-  <button id="register-btn">Register</button>
-  <p id="login-msg"></p>
-</div>
+    <!-- This is where the game renders -->
+    <canvas id="gameCanvas"></canvas>
 
-<div id="game-screen" style="display:none;">
-  <canvas id="gameCanvas"></canvas>
-  <div id="hud">
-    <p id="hp">HP: 100</p>
-    <p id="coords">X:0 Y:0 Z:0</p>
-  </div>
-</div>
+    <!-- Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="client.js"></script>
+    <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+
+    <!-- Your client-side game logic -->
+    <script src="client.js"></script>
 </body>
 </html>
-
